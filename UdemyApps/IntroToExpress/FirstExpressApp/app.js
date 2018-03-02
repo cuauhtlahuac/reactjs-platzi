@@ -5,11 +5,16 @@ app.get("/",function(req,res){
 	res.send("hi there");
 });
 
+app.get("/bye",function(req,res){
+	res.send("Goodbye");
+})
+
+app.get("/dog",function(req,res){
+	res.send("Miau!");
+	console.log("Se hizo una solicitud");
+});
 
 //sin el listen express no puede correr.
 app.listen(3000,function(){
-	var conectnum = 0;
-	console.log("conected!!!")
-	conectnum + 1
-	console.log(conectnum);
+	console.log("conected!!!");
 })
