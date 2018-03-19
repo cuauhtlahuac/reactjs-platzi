@@ -6,7 +6,7 @@ request('http://www.google.com', function (error, response, body) {
 });*/
 
 var request = require("request");
-request('http://thehomestore123.shopnchek.com.mx/Login.aspx',function(error,response,body){
+request('https://lichess.org/',function(error,response,body){
     if(error){
         console.log("someting wrong!");
         console.log(error);
