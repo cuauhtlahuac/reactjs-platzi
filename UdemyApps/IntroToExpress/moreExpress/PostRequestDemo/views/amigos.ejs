@@ -1,0 +1,10 @@
+<h1>Aqui van los nuevos valores</h1>
+<ol>
+<% friends.forEach(function(f){ %>
+<li><%= f %></li>
+<% }) %>
+</ol>
+<form action="/nuevoamigo" method="POST">
+    <input type="text" name='amigo' placeholder="nombre">
+    <button>Nuevo Amigo</button>
+</form>
