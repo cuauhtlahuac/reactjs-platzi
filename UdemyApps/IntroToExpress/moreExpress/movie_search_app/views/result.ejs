@@ -1,0 +1,11 @@
+<h1>Result Page</h1>
+<p>Result of your search: <b>- <%= name %> -</b></p>
+<ol>
+<% data["Search"].forEach(function(movie) { %>
+    <li>
+        <%= movie["Title"] %> - <b><%= movie["Year"] %></b>
+    </li>
+<% }) %>
+</ol>
+<br/>
+<button><a href="/">return to search</a></button>
