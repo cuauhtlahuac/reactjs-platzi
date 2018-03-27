@@ -1,0 +1,9 @@
+<% include partials/header %>
+<h2>Los mejores tableros de ajedres solo aqui</h2>
+<% listBoards.forEach(function(x){ %>
+    <div>
+        <h1><%= x.board %></h1>
+        <img src="<%= x.url %>" alt="<%= x.board %>">
+    </div>    
+<% }) %>
+<% include partials/footer %>
